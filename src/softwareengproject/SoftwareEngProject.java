@@ -16,6 +16,7 @@ public class SoftwareEngProject {
      */
     public static void main(String[] args) {
         System.out.println("Raghad");
+        System.out.println("Raghad");
     }
     
 }
