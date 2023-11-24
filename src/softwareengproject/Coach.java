@@ -18,19 +18,16 @@ class Coach {
         this.courseList = new ArrayList<>();
     }
 
+   
+
     public void addCourse(String name, String courseId, double price) {
         Course newCourse = new Course(name, courseId, price);
         courseList.add(newCourse);
-        System.out.println("Course added successfully: " + newCourse.getName());
+        System.out.println("Course added successfully!");
     }
 
-    public void displayCourses() {
-        System.out.println("List of Courses:");
-        for (Course course : courseList) {
-            System.out.println("Name: " + course.getName());
-            System.out.println("Course ID: " + course.getCourseId());
-            System.out.println("Price: $" + course.getPrice());
-            System.out.println("------------------------");
-        }
+    public ArrayList<Course> getCourseList() {
+        return courseList;
+    }
     } 
-}
+
