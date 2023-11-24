@@ -20,7 +20,13 @@ public class SoftwareEngProject {
         System.out.println("Shahad");
         System.out.println("Maha");
         System.out.println("Atheer");
+Coach coach = new Coach();
 
+        // Adding a course
+        coach.addCourse("Java Programming", "CS101", 49.99);
+
+        // Displaying courses
+        coach.displayCourses();
         
     }
     
