@@ -7,12 +7,29 @@ package softwareengproject;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author borga
- */
- class trainee {
-     public void viewCourses(ArrayList<Course> courseList) {
+class Trainee {
+    private String name;
+    private String contactDetails;
+    // Other trainee information fields
+
+    public void createProfile(String name, String contactDetails) {
+        this.name = name;
+        this.contactDetails = contactDetails;
+        // Set other trainee information here
+        System.out.println("Profile created successfully!");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContactDetails() {
+        return contactDetails;
+    }
+
+    // Other methods in the Trainee class
+
+    public void viewCourses(ArrayList<Course> courseList) {
         System.out.println("\nAvailable Courses:");
         for (Course course : courseList) {
             System.out.println("Name: " + course.getName());

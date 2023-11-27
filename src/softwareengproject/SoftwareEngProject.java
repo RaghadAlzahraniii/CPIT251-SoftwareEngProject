@@ -8,40 +8,34 @@ package softwareengproject;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * @author USER
- */
 public class SoftwareEngProject {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        System.out.println("Raghad");
-        System.out.println("Raghad");
-        System.out.println("Shahad");
-        System.out.println("Maha");
-        System.out.println("Atheer");
-Coach coach = new Coach();
-trainee Trainee=new trainee();
+        Coach coach = new Coach("Coach123"); // Replace "Coach123" with actual coach ID
+        Trainee trainee = new Trainee();
+
         // Adding a course
         coach.addCourse("Java Programming", "CS101", 49.99);
 
         // Displaying courses
-        // Displaying added courses
         ArrayList<Course> availableCourses = coach.getCourseList();
-        Trainee.viewCourses(availableCourses);
+        trainee.viewCourses(availableCourses);
 
         // Trainee selecting a course
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nEnter the Course ID you want to select: ");
         String selectedCourseId = scanner.nextLine();
 
-        // Checking course availability
-        boolean courseAvailable = Trainee.selectCourse(selectedCourseId, availableCourses);
+        boolean courseAvailable = trainee.selectCourse(selectedCourseId, availableCourses);
         if (courseAvailable) {
             // Continue with the trainee's actions after selecting a course
+
+            // Create trainee profile
+            trainee.createProfile("John Doe", "example@email.com");
+            
+            // View trainee profile by coach (with ID verification)
+            System.out.print("\nEnter Coach ID to view trainee profile: ");
+            String coachIdInput = scanner.nextLine();
+            coach.viewTraineeProfile(trainee, coachIdInput);
+        }
     }
-    
-}}
+}
