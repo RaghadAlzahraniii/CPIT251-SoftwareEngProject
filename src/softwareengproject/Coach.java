@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 class Coach {
     private ArrayList<Course> courseList;
-    private ArrayList<Trainee> traineeList; // Assuming Trainee class exists
+     // Assuming Trainee class exists
     private String coachId; // Adding Coach ID for verification
 
     public Coach(String coachId) {

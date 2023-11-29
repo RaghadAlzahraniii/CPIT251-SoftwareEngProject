@@ -8,24 +8,42 @@ package softwareengproject;
 import java.util.ArrayList;
 
 class Trainee {
-    private String name;
-    private String contactDetails;
+    ArrayList<Trainee> traineeList;
+    private String Name;
+    private String Id;
+    private int Weight;
+    private String Sex;
+    private int Height;
+    private String goal;
+
+    public Trainee(String Name, String Id, int Weight, String Sex, int Height, String goal) {
+        this.Name = Name;
+        this.Id = Id;
+        this.Weight = Weight;
+        this.Sex = Sex;
+        this.Height = Height;
+        this.goal = goal;
+    }
+
+    public ArrayList<Trainee> getTraineeList() {
+        return traineeList;
+    }
+
+   
+    
     // Other trainee information fields
 
-    public void createProfile(String name, String contactDetails) {
-        this.name = name;
-        this.contactDetails = contactDetails;
+   void createProfile(String Id,String Name, String Sex, int Weight, int Height, String goal) {
+       trainee newProfile = new trainee(Id,Name,  Sex, Weight,Height,  goal);
+           traineeList.add(newProfile);
+       
+       
         // Set other trainee information here
         System.out.println("Profile created successfully!");
     }
 
-    public String getName() {
-        return name;
-    }
+   
 
-    public String getContactDetails() {
-        return contactDetails;
-    }
 
     // Other methods in the Trainee class
 
@@ -49,4 +67,28 @@ class Trainee {
         System.out.println("Course Not available");
         return false; // Course is not available
     }
+
+    public String getId() {
+        return Id;
+    }
+     public String getName() {
+        return Name;
+    }
+
+    public int getWeight() {
+        return Weight;
+    }
+
+    public String getSex() {
+        return Sex;
+    }
+
+    public int getHeight() {
+        return Height;
+    }
+
+    public String getGoal() {
+        return goal;
+    }
+       
 }
