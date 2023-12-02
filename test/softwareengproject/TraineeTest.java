@@ -80,11 +80,11 @@ public class TraineeTest {
     /**
      * Test of viewCourses method, of class Trainee.
      */
-    @ Ignore
+    //@ Ignore
     @Test
     public void testViewCourses() {
         System.out.println("viewCourses");
-        ArrayList<Course> courseList = null;
+        ArrayList<Course> courseList = new ArrayList<>();
         Trainee instance = new Trainee();
         instance.viewCourses(courseList);
         // TODO review the generated test code and remove the default call to fail.
@@ -99,7 +99,7 @@ public class TraineeTest {
     public void testSelectCourse() {
         System.out.println("selectCourse");
         String courseId = "K155";
-        ArrayList<Course> courseList = null;
+        ArrayList<Course> courseList = new ArrayList<>();
         courseList.add(new Course("Kito", "K123", 200.0));
         Trainee instance = new Trainee();
         boolean expResult = false;
