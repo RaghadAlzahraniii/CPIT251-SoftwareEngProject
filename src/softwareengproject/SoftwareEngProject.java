@@ -59,7 +59,7 @@ public class SoftwareEngProject {
         scanner.nextLine(); // Consume newline character
         System.out.print("\nEnter the Goal: ");
         String goal = scanner.nextLine(); // 
-        Trainee trainee1 = new Trainee(Id, Name,  Weight,Sex, Height, goal);
+        Trainee trainee1 = new Trainee(Id, Name, Sex, Weight, Height, goal);
         trainee1.createProfile(Id, Name, Sex, Weight, Height, goal);
         traineeList.add(trainee1);
 
