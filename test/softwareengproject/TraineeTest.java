@@ -94,12 +94,13 @@ public class TraineeTest {
     /**
      * Test of selectCourse method, of class Trainee.
      */
-    @Ignore
+   
     @Test
     public void testSelectCourse() {
         System.out.println("selectCourse");
-        String courseId = "";
+        String courseId = "K155";
         ArrayList<Course> courseList = null;
+        courseList.add(new Course("Kito", "K123", 200.0));
         Trainee instance = new Trainee();
         boolean expResult = false;
         boolean result = instance.selectCourse(courseId, courseList);
