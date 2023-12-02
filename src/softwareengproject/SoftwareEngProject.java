@@ -10,9 +10,11 @@ import java.util.Scanner;
 
 public class SoftwareEngProject {
     public static void main(String[] args) {
-        
-        Coach coach = new Coach("Coach123"); // Replace "Coach123" with actual coach ID
+         
+        Coach coach = new Coach("123456"); // Replace "Coach123" with actual coach ID
         Trainee trainee = new Trainee();
+         ArrayList<Trainee> traineeList = new ArrayList< Trainee>();
+        
        Scanner scanner = new Scanner(System.in);
         // Adding a course////////////خلصنا
         String name=scanner.next();
@@ -22,7 +24,7 @@ public class SoftwareEngProject {
 
         
 
-        // Trainee selecting a course
+        /*// Trainee selecting a course
        // Displaying courses
         ArrayList<Course> availableCourses = coach.getCourseList();
         trainee.viewCourses(availableCourses);
@@ -31,28 +33,30 @@ public class SoftwareEngProject {
           
         boolean courseAvailable = trainee.selectCourse(selectedCourseId, availableCourses);
         if (courseAvailable) {
-            // Continue with the trainee's actions after selecting a course
+            // Continue with the trainee's actions after selecting a course*/
 
             // Create trainee profile ///////////////خلصنا ذي الميثودا
-            System.out.print("\nEnter the your ID:  ");
-        String Id = scanner.nextLine();
-        System.out.print("\nEnter the your Name:  ");
-        String Name = scanner.nextLine();
-         System.out.print("\nEnter the your Sex:  ");
-        String Sex = scanner.nextLine();
-        System.out.print("\nEnter the your Weight:  ");
-        int Weight = scanner.nextInt();
-         System.out.print("\nEnter the your Height:  ");
-        int Height = scanner.nextInt();
-        System.out.print("\nEnter the Goal:  ");
-        String goal = scanner.nextLine();
-        
-            trainee.createProfile(Id,Name,Sex,Weight,Height,goal);
-          
+           // Create trainee profile
+            System.out.print("\nEnter your ID: ");
+            String Id = scanner.next(); // Use next() for ID
+            System.out.print("\nEnter your Name: ");
+            String Name = scanner.next(); // Use next() for Name
+            System.out.print("\nEnter your Sex: ");
+            String Sex = scanner.next(); // Use next() for Sex
+            System.out.print("\nEnter your Weight: ");
+            int Weight = scanner.nextInt();
+            System.out.print("\nEnter your Height: ");
+            int Height = scanner.nextInt();
+            scanner.nextLine(); // Consume newline character
+            System.out.print("\nEnter the Goal: ");
+            String goal = scanner.nextLine(); // 
+            Trainee trainee1 = new Trainee(Id,Name,Sex,Weight,Height,goal);
+            traineeList.add(trainee1);
+             
             // View trainee profile by coach (with ID verification)//فيه مشكله
             System.out.print("\nEnter Coach ID to view trainee profile: ");
             String coachIdInput = scanner.nextLine();
-            coach.viewTraineeProfile(trainee, coachIdInput);
+            coach.viewTraineeProfile(traineeList, coachIdInput);
         }
     }
-}
+

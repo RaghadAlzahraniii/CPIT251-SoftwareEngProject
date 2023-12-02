@@ -14,7 +14,7 @@ class Coach {
 
     public Coach(String coachId) {
         this.courseList = new ArrayList<>();
-        this.traineeList = new ArrayList<>();
+        
         this.coachId = coachId;
     }
 
@@ -24,12 +24,17 @@ class Coach {
         System.out.println("Course added successfully!");
     }
 
-    public void viewTraineeProfile(Trainee trainee, String requestingCoachId) {
+    public void viewTraineeProfile(ArrayList<Trainee> traineeList, String requestingCoachId) {
         if (requestingCoachId.equals(coachId)) {
-            System.out.println("Trainee Profile:");
+            
+            for(Trainee trainee:traineeList){
+                System.out.println("Trainee Profile:");
             System.out.println("Name: " + trainee.getName());
-            System.out.println("Contact Details: " + trainee.getContactDetails());
-            // Display other trainee information here
+            System.out.println("ID: " + trainee.getId());
+System.out.println("Sex: " + trainee.getSex());
+System.out.println("Weight: " + trainee.getWeight());
+        System.out.println("Height: " + trainee.getHeight());
+System.out.println("Goal: " + trainee.getGoal());}
         } else {
             System.out.println("You are not authorized to view this trainee's profile.");
         }
@@ -40,4 +45,6 @@ class Coach {
     }
 
     // Other methods in the Coach class...
+
+    
 }
