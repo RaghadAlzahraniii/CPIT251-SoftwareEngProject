@@ -67,12 +67,13 @@ public class CoachTest {
     /**
      * Test of viewTraineeProfile method, of class Coach.
      */
+    //@Ignore
     @Test
     public void testViewTraineeProfile() {
         System.out.println("viewTraineeProfile");
-        ArrayList<Trainee> traineeList = null;
-        String requestingCoachId = "";
-        Coach instance = null;
+        ArrayList<Trainee> traineeList = new ArrayList<>();
+        String requestingCoachId = "210567";
+        Coach instance = new Coach("210000");
         instance.viewTraineeProfile(traineeList, requestingCoachId);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -81,16 +82,16 @@ public class CoachTest {
     /**
      * Test of getCourseList method, of class Coach.
      */
-   @Ignore
+   //@Ignore
     @Test
     public void testGetCourseList() {
         System.out.println("getCourseList");
-        Coach instance = null;
-        ArrayList<Course> expResult = null;
+        Coach instance = new Coach("12345"); // Initialize the Coach instance
+        ArrayList<Course> expResult = new ArrayList<>(); // Initialize the expected result
         ArrayList<Course> result = instance.getCourseList();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
