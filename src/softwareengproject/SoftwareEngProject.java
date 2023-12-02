@@ -16,11 +16,11 @@ public class SoftwareEngProject {
 
         Scanner scanner = new Scanner(System.in);
         // Adding a course////////////خلصنا
-        System.out.print("\nEnter Name: ");
+        System.out.print("\nEnter Course Name : ");
         String name = scanner.nextLine();
-        System.out.print("\nEnter courseId ");
+        System.out.print("\nEnter courseId: ");
         String courseId = scanner.next();
-        System.out.print("\nEnter price ");
+        System.out.print("\nEnter price: ");
         double price = scanner.nextDouble();
         coach.addCourse(name, courseId, price);
 
@@ -59,7 +59,7 @@ public class SoftwareEngProject {
         scanner.nextLine(); // Consume newline character
         System.out.print("\nEnter the Goal: ");
         String goal = scanner.nextLine(); // 
-        Trainee trainee1 = new Trainee(Id, Name, Sex, Weight, Height, goal);
+        Trainee trainee1 = new Trainee(Id, Name,  Weight,Sex, Height, goal);
         trainee1.createProfile(Id, Name, Sex, Weight, Height, goal);
         traineeList.add(trainee1);
 
