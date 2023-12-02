@@ -13,13 +13,14 @@ import java.util.ArrayList;
  */
 
 public class User {
+    
     private ArrayList<User> user;
-       private String firstName;
-           private String lastName;
-               private String ID;
-           private String PhoneNumber;
-        private String Email;
-        private String CoachOrTrainee;
+    private String firstName;
+    private String lastName;
+    private String ID;
+    private String PhoneNumber;
+    private String Email;
+    private String CoachOrTrainee;
 
     public User(String firstName, String lastName, String ID, String PhoneNumber,String CoachOrTrainee) {
         this.firstName = firstName;
@@ -30,7 +31,7 @@ public class User {
     }
     
 
-public String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
@@ -49,7 +50,7 @@ public String getFirstName() {
     public String getEmail() {
         return Email;
     }
-public String getCoachOrTrainee() {
+    public String getCoachOrTrainee() {
         return CoachOrTrainee;
     }
 }

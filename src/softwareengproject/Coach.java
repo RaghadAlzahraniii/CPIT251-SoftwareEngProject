@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 class Coach {
     private ArrayList<Course> courseList;
-     // Assuming Trainee class exists
+                                                               // Assuming Trainee class exists
     private String coachId; // Adding Coach ID for verification
 
     public Coach(String coachId) {
@@ -31,20 +31,18 @@ class Coach {
                 System.out.println("Trainee Profile:");
             System.out.println("Name: " + trainee.getName());
             System.out.println("ID: " + trainee.getId());
-System.out.println("Sex: " + trainee.getSex());
-System.out.println("Weight: " + trainee.getWeight());
-        System.out.println("Height: " + trainee.getHeight());
-System.out.println("Goal: " + trainee.getGoal());}
+            System.out.println("Sex: " + trainee.getSex());
+            System.out.println("Weight: " + trainee.getWeight());
+            System.out.println("Height: " + trainee.getHeight());
+            System.out.println("Goal: " + trainee.getGoal());}
         } else {
             System.out.println("You are not authorized to view this trainee's profile.");
         }
     }
 
-    public ArrayList<Course> getCourseList() {
+        public ArrayList<Course> getCourseList() {
         return courseList;
     }
-
-    // Other methods in the Coach class...
 
     
 }
