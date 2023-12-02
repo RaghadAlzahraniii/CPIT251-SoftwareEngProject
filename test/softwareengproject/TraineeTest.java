@@ -41,7 +41,7 @@ public class TraineeTest {
     /**
      * Test of getTraineeList method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetTraineeList() {
         System.out.println("getTraineeList");
@@ -94,7 +94,7 @@ public class TraineeTest {
     /**
      * Test of selectCourse method, of class Trainee.
      */
-   
+   //@Ignore
     @Test
     public void testSelectCourse() {
         System.out.println("selectCourse");
@@ -112,12 +112,12 @@ public class TraineeTest {
     /**
      * Test of getId method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetId() {
         System.out.println("getId");
         Trainee instance = new Trainee();
-        String expResult = "";
+        String expResult = null;
         String result = instance.getId();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -127,12 +127,12 @@ public class TraineeTest {
     /**
      * Test of getName method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetName() {
         System.out.println("getName");
         Trainee instance = new Trainee();
-        String expResult = "";
+        String expResult = null;
         String result = instance.getName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -142,7 +142,7 @@ public class TraineeTest {
     /**
      * Test of getWeight method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetWeight() {
         System.out.println("getWeight");
@@ -157,12 +157,12 @@ public class TraineeTest {
     /**
      * Test of getSex method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetSex() {
         System.out.println("getSex");
         Trainee instance = new Trainee();
-        String expResult = "";
+        String expResult = null;
         String result = instance.getSex();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -172,7 +172,7 @@ public class TraineeTest {
     /**
      * Test of getHeight method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetHeight() {
         System.out.println("getHeight");
@@ -187,12 +187,12 @@ public class TraineeTest {
     /**
      * Test of getGoal method, of class Trainee.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void testGetGoal() {
         System.out.println("getGoal");
         Trainee instance = new Trainee();
-        String expResult = "";
+        String expResult = null;
         String result = instance.getGoal();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
