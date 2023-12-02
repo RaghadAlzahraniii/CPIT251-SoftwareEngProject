@@ -44,14 +44,24 @@ public class CoachTest {
      */
     @Test
     public void testAddCourse() {
-        System.out.println("addCourse");
-        String name = "Kito dite";
-        String courseId = "KD251";
-        double price = 150.0;
-        Coach instance = null;
-        instance.addCourse(name, courseId, price);
+    System.out.println("testAddCourse");
+    String name = "Kito dite";
+    String courseId = "KD251";
+    double price = 150.0;
+ 
+     Coach instance = new Coach(courseId);
+   
+    // Call the addCourse method
+
+    // Assert that the course has been added correctly
+    // You can add additional assertions if needed
+    // For example, you can assert the size of the course list
+    instance.addCourse(name, courseId, price);
+    assertEquals(1, instance.getCourseList().size());
+
+        
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -65,7 +75,7 @@ public class CoachTest {
         Coach instance = null;
         instance.viewTraineeProfile(traineeList, requestingCoachId);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**

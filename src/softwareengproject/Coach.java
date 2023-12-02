@@ -18,6 +18,8 @@ class Coach {
         this.coachId = coachId;
     }
 
+   
+
     public void addCourse(String name, String courseId, double price) {
         Course newCourse = new Course(name, courseId, price);
         courseList.add(newCourse);

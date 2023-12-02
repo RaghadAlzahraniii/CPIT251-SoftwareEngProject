@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package softwareengproject;
 
 import java.util.ArrayList;
@@ -12,7 +8,7 @@ public class SoftwareEngProject {
 
     public static void main(String[] args) {
 
-        Coach coach = new Coach("123456"); // sapose "123" with actual coach ID
+        Coach coach = new Coach("123456"); // suppose "123" with actual coach ID
 
         Scanner scanner = new Scanner(System.in);
         // Adding a course
@@ -27,7 +23,7 @@ public class SoftwareEngProject {
         
         coach.addCourse(name, courseId, price);
 
-        // Trainee selecting a course/
+        // Trainee selecting a course
         // Displaying courses
        
         Trainee trainee = new Trainee();
