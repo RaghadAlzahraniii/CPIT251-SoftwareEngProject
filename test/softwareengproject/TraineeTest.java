@@ -59,7 +59,7 @@ public class TraineeTest {
     @Test
     public void testCreateProfile() {
         System.out.println("createProfile");
-        String Id = "210567";
+        String Id = "210756";
         String Name = "maha";
         String Sex = "famale";
         int Weight = 65;
@@ -100,7 +100,7 @@ public class TraineeTest {
         System.out.println("selectCourse");
         String courseId = "K155";
         ArrayList<Course> courseList = new ArrayList<>();
-        courseList.add(new Course("Kito", "K123", 200.0));
+        courseList.add(new Course("Kito Diet", "K123", 200.0));
         Trainee instance = new Trainee();
         boolean expResult = false;
         boolean result = instance.selectCourse(courseId, courseList);

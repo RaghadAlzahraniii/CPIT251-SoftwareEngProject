@@ -63,18 +63,18 @@ public class CoachTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
-
-    /**
+     /**
      * Test of viewTraineeProfile method, of class Coach.
      */
-    //@Ignore
+     //@Ignore
+    
     @Test
     public void testViewTraineeProfile() {
         System.out.println("viewTraineeProfile");
         ArrayList<Trainee> traineeList = new ArrayList<>();
-        String requestingCoachId = "210567";
-        Coach instance = new Coach("210000");
-        instance.viewTraineeProfile(traineeList, requestingCoachId);
+        String requestingCoachID = "210756";
+        Coach instance = new Coach("210001");
+        instance.viewTraineeProfile(traineeList, requestingCoachID);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
