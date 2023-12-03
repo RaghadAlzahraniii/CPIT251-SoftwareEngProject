@@ -69,9 +69,9 @@ public class SoftwareEngProject {
         traineeList.add(trainee1);
 
         // View trainee profile by coach (with ID verification)
-        System.out.print("\nEnter Coach ID to view trainee profile: ");
+        System.out.print("\nEnter Coach ID to view trainee profile:  ");
         String coachIdInput = scanner.nextLine();
-        coach.viewTraineeProfile(traineeList, coachIdInput);
+        coach.viewTraineeProfile(traineeList,coachIdInput );
     }
 }
 

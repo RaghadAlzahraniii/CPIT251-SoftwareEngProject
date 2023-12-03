@@ -29,7 +29,6 @@ public class User {
         this.PhoneNumber = PhoneNumber;
         this.CoachOrTrainee= CoachOrTrainee;
     }
-    
 
     public String getFirstName() {
         return firstName;
@@ -50,7 +49,9 @@ public class User {
     public String getEmail() {
         return Email;
     }
+
     public String getCoachOrTrainee() {
         return CoachOrTrainee;
     }
+    
 }

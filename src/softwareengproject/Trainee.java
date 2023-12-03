@@ -63,8 +63,7 @@ class Trainee {
             for (Course course : courseList) {
             if (course.getCourseId().equals(courseId)) {
             System.out.println("Course selected: " + course.getName());
-            return true; // Course is available
-            }
+            return true; }// Course is available
             }
             System.out.println("Course Not available");
             return false; // Course is not available
