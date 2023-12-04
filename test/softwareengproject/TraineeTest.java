@@ -57,18 +57,22 @@ public class TraineeTest {
      * Test of createProfile method, of class Trainee.
      */
     @Test
-    public void testCreateProfile() {
+   public void testCreateProfile() {
         System.out.println("createProfile");
-        String Id = "210756";
+        String Id = "210567";
         String Name = "maha";
+        String Phone = "0500000333";
+        String Email = "example@gmail.com";
         String Sex = "famale";
         int Weight = 65;
         int Height = 165;
         String goal = "Lose weight";
         Trainee instance = new Trainee();
-        instance.createProfile(Id, Name, Sex, Weight, Height, goal);
+        instance.createProfile(Id, Name,Phone,Email, Sex, Weight, Height, goal);
         assertEquals(Id, instance.getId());
         assertEquals(Name, instance.getName());
+        assertEquals(Phone, instance.getPhone());
+        assertEquals(Email, instance.getEmail());
         assertEquals(Sex, instance.getSex());
         assertEquals(Weight, instance.getWeight());
         assertEquals(Height, instance.getHeight());
@@ -194,6 +198,34 @@ public class TraineeTest {
         Trainee instance = new Trainee();
         String expResult = null;
         String result = instance.getGoal();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getPhone method, of class Trainee.
+     */
+    @Test
+    public void testGetPhone() {
+        System.out.println("getPhone");
+        Trainee instance = new Trainee();
+        String expResult = null;
+        String result = instance.getPhone();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getEmail method, of class Trainee.
+     */
+    @Test
+    public void testGetEmail() {
+        System.out.println("getEmail");
+        Trainee instance = new Trainee();
+        String expResult = null;
+        String result = instance.getEmail();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

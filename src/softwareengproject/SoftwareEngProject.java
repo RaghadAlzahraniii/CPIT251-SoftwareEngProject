@@ -51,6 +51,12 @@ public class SoftwareEngProject {
         System.out.print("\nEnter your Name: ");
         String Name = scanner.next(); // Use next() for Name
         
+        System.out.print("\nEnter your Phone: ");
+        String Phone = scanner.next(); // Use next() for Name
+        
+        System.out.print("\nEnter your Email: ");
+        String Email = scanner.next(); // Use next() for Name
+        
         System.out.print("\nEnter your Sex: ");
         String Sex = scanner.next(); // Use next() for Sex
         
@@ -64,9 +70,10 @@ public class SoftwareEngProject {
         System.out.print("\nEnter the Goal: ");
         String goal = scanner.nextLine(); // 
         
-        Trainee trainee1 = new Trainee(Id, Name, Sex, Weight, Height, goal);
-        trainee1.createProfile(Id, Name, Sex, Weight, Height, goal);
+        Trainee trainee1 = new Trainee(Id, Name,Phone,Email, Sex, Weight, Height, goal);
+        trainee1.createProfile(Id, Name, Phone,Email, Sex, Weight, Height, goal);
         traineeList.add(trainee1);
+
 
         // View trainee profile by coach (with ID verification)
         System.out.print("\nEnter Coach ID to view trainee profile:  ");

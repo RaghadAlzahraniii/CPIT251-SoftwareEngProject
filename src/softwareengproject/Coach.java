@@ -33,6 +33,8 @@ class Coach {
                 System.out.println("Trainee Profile:");
             System.out.println("Name: " + trainee.getName());
             System.out.println("ID: " + trainee.getId());
+            System.out.println("Phone: " + trainee.getPhone());
+            System.out.println("Email: " + trainee.getEmail());
             System.out.println("Sex: " + trainee.getSex());
             System.out.println("Weight: " + trainee.getWeight());
             System.out.println("Height: " + trainee.getHeight());
