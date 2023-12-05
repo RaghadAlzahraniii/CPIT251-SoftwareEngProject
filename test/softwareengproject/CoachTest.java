@@ -45,8 +45,8 @@ public class CoachTest {
     @Test
     public void testAddCourse() {
     System.out.println("testAddCourse");
-    String name = "Kito dite";
-    String courseId = "KD251";
+    String name = "Kito diet";
+    String courseId = "KD100";
     double price = 150.0;
  
      Coach instance = new Coach(courseId);
@@ -86,7 +86,7 @@ public class CoachTest {
     @Test
     public void testGetCourseList() {
         System.out.println("getCourseList");
-        Coach instance = new Coach("12345"); // Initialize the Coach instance
+        Coach instance = new Coach("1200023"); // Initialize the Coach instance
         ArrayList<Course> expResult = new ArrayList<>(); // Initialize the expected result
         ArrayList<Course> result = instance.getCourseList();
         assertEquals(expResult, result);
