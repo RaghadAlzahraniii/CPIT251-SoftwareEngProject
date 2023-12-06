@@ -14,10 +14,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
 
-/**
- *
- * @author borga
- */
+
 public class CoachTest {
     
     public CoachTest() {
@@ -75,8 +72,7 @@ public class CoachTest {
         String requestingCoachID = "210756";
         Coach instance = new Coach("210001");
         instance.viewTraineeProfile(traineeList, requestingCoachID);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -90,8 +86,7 @@ public class CoachTest {
         ArrayList<Course> expResult = new ArrayList<>(); // Initialize the expected result
         ArrayList<Course> result = instance.getCourseList();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
     
 }
