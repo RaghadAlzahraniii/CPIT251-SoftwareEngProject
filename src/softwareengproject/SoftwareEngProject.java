@@ -16,7 +16,7 @@ public class SoftwareEngProject {
         String Coach_or_Trainee=scanner.next();
         
         
-        //if coach
+        //if statmement: coach
         if (Coach_or_Trainee.equalsIgnoreCase("Coach")){
            System.out.print("\n1:Adding a course");  
            System.out.print("\n2:View trainee profile by coach");
