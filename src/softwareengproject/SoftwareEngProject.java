@@ -7,13 +7,26 @@ import java.util.Scanner;
 public class SoftwareEngProject {
 
     public static void main(String[] args) {
-
-        Coach coach = new Coach("123456"); // suppose "123" with actual coach ID
-
         Scanner scanner = new Scanner(System.in);
+        ArrayList<Trainee> traineeList = new ArrayList< Trainee>();
+        Coach coach = new Coach("123456"); // suppose "123" with actual coach ID
+        
+        //Ask the user
+        System.out.print("\nAre you Coach or  Trainee?");
+        String Coach_or_Trainee=scanner.next();
+        
+        
+        //if coach
+        if (Coach_or_Trainee.equalsIgnoreCase("Coach")){
+           System.out.print("\n1:Adding a course");  
+           System.out.print("\n2:View trainee profile by coach");
+           System.out.print("\nEnter number");
+        int number = scanner.nextInt();
+        switch (number) {
+            case 1:
         // Adding a course
         System.out.print("\nEnter Course Name : ");
-        String name = scanner.nextLine();
+        String name = scanner.next();
         
         System.out.print("\nEnter courseId: ");
         String courseId = scanner.next();
@@ -22,7 +35,24 @@ public class SoftwareEngProject {
         double price = scanner.nextDouble();
         
         coach.addCourse(name, courseId, price);
-
+              break;
+              case 2:
+          // View trainee profile by coach (with ID verification)
+        System.out.print("\nEnter Coach ID to view trainee profile: ");
+        String coachIdInput = scanner.nextLine();
+        coach.viewTraineeProfile(traineeList, coachIdInput);
+         break;
+        
+        }
+        }
+        else if(Coach_or_Trainee.equalsIgnoreCase("Trainee")){
+        System.out.print("\n1:Trainee selecting a course");
+        System.out.print("\n2:Create trainee profile");
+        System.out.print("\nEnter number");
+        int number = scanner.nextInt();
+        switch (number) {
+            case 1:
+        
         // Trainee selecting a course
         // Displaying courses
        
@@ -41,21 +71,22 @@ public class SoftwareEngProject {
             }
         }
 
-        // Continue with the trainee's actions after selecting a course
+         break;
+         case 2:
         // Create trainee profile 
         // Create trainee profile
-        ArrayList<Trainee> traineeList = new ArrayList< Trainee>();
+        
         System.out.print("\nEnter your ID: ");
         String Id = scanner.next(); // Use next() for ID
         
         System.out.print("\nEnter your Name: ");
         String Name = scanner.next(); // Use next() for Name
         
-        System.out.print("\nEnter your Phone: ");
-        String Phone = scanner.next(); // Use next() for Name
+        System.out.print("\nEnter your Phone number: ");
+        String Phone = scanner.next(); // Use next() for phone
         
         System.out.print("\nEnter your Email: ");
-        String Email = scanner.next(); // Use next() for Name
+        String Email = scanner.next(); // Use next() for email
         
         System.out.print("\nEnter your Sex: ");
         String Sex = scanner.next(); // Use next() for Sex
@@ -71,14 +102,9 @@ public class SoftwareEngProject {
         String goal = scanner.nextLine(); // 
         
         Trainee trainee1 = new Trainee(Id, Name,Phone,Email, Sex, Weight, Height, goal);
-        trainee1.createProfile(Id, Name, Phone,Email, Sex, Weight, Height, goal);
+        trainee1.createProfile(Id, Name,Phone,Email, Sex, Weight, Height, goal);
         traineeList.add(trainee1);
-
-
-        // View trainee profile by coach (with ID verification)
-        System.out.print("\nEnter Coach ID to view trainee profile:  ");
-        String coachIdInput = scanner.nextLine();
-        coach.viewTraineeProfile(traineeList,coachIdInput );
-    }
-}
+          break;
+        }}
+    }}
 
