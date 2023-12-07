@@ -39,7 +39,7 @@ public class SoftwareEngProject {
               case 2:
           // View trainee profile by coach (with ID verification)
         System.out.print("\nEnter Coach ID to view trainee profile: ");
-        String coachIdInput = scanner.nextLine();
+        String coachIdInput = scanner.next();
         coach.viewTraineeProfile(traineeList, coachIdInput);
          break;
         
